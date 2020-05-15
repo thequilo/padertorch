@@ -89,3 +89,33 @@ trainer.train(train_dataset)
 ## padertorch.Configurable
 
 ToDo
+
+## Installation
+
+The installation of `padertorch` is straight forward, but requires `cython` and `scipy` to be installed.
+We recommend to install `numpy` and `scipy` using conda, but using `pip` should work fine as well.
+
+### Install using conda
+
+Create a new environment with `cython`, `numpy` and `scipy` installed:
+
+```bash
+$ conda create -n "${env_name}" cython numpy scipy
+$ conda activate "${env_name}"
+```
+
+Then, you can install padertorch using `pip`:
+
+```bash
+$ pip install git+https://github.com/fgnt/padertorch.git
+```
+
+### Install using pip
+
+You can as well use pip like this:
+
+```bash
+$ pip install cython
+$ pip install scipy
+$ pip install git+https://github.com/fgnt/padertorch.git
+```
